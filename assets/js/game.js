@@ -1,4 +1,3 @@
-//CHANGE THESE TO LOTR THE FIRST ONES ARE THE ANSWERS
 var questionsMap = new Map([
     ["Who created the Dwarves?", ["Aulë", "Ilúvatar", "Celebrimbor", "Gil-Galad"]],
     [
@@ -75,7 +74,7 @@ var questionsMap = new Map([
       });
   }
   
-  // checks if answer is correct
+  // checks if correct
   function compare(selection) {
     if (selection.textContent === answers[0]) {
       // on correct answer change button color to a lighter and increment score
@@ -127,7 +126,7 @@ var questionsMap = new Map([
     }
   }
   
-  // durstendfeld shuffle from stackoverflow
+  // "durstendfeld" shuffle found on stackoverflow
   function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -218,7 +217,7 @@ var questionsMap = new Map([
     });
   }
   
-  // gets game started
+  // begins game
   loadQuestion();
   setTime(60);
   

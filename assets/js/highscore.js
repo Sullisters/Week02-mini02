@@ -4,17 +4,17 @@ var clear = document.getElementById("clear");
 
 // function called on load
 function init() {
-    // Check for stored scores from localStorage, retrieve if not null
+    // Check for stored scores from localStorage, retrieve if not zero
     if (localStorage.getItem("highScores") !== null) {
         highScores = JSON.parse(localStorage.getItem("highScores"));
     } 
-    // check for newest score, should be null if coming straight from home page
+    // checks for newest score
     var newScore = JSON.parse(localStorage.getItem("newScore"));
     if (newScore !== null) {
         // add new score
         highScores.push(newScore);
     }
-    // update highscores in local storage
+    // updates the highscore in localstorage
     localStorage.setItem("highScores", JSON.stringify(highScores));
     // call renderscores to actually create rankings list
     renderScores(newScore);

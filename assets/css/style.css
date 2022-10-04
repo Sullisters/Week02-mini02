@@ -1,9 +1,11 @@
+/*Reset*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*Sets var colors*/
 :root {
     --primary: rgb(223, 81, 223);
     --secondary: rgb(175, 50, 175);
@@ -37,11 +39,13 @@ footer {
     justify-content: center;
 }
 
+/*Color of "highscores" text var*/
 #highscores {
     margin-left: auto;
     color: var(--text);
 }
 
+/*Color of "home" text var*/
 #home {
     float: left;
     color: var(--text);
@@ -51,6 +55,7 @@ footer {
     margin: 10vh;
 }
 
+/*Sets size of "Welcome" text var*/
 #splash-welcome {
     font-size: 50px;
 }
@@ -64,6 +69,7 @@ footer {
     border-radius: 10px;
 }
 
+/*Sets alignment of the "questions" text var*/
 #questions {
     text-align: left;
     min-height: 150px;
@@ -73,6 +79,7 @@ footer {
     font-size: 36px;
 }
 
+/*Setting styling to "answers" selector*/
 #answers button {
     background-color: var(--secondary);
     color: var(--text);
@@ -94,7 +101,7 @@ footer {
     text-align: center;
 }
 
-/*reset score*/
+/*resets score*/
 #clear {
     font-size: 20px;
 }
